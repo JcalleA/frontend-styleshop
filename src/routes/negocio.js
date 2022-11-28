@@ -14,7 +14,7 @@ const Negocio = () => {
         const [negocio, setNegocio] = useState([])
         useEffect(() => {
             axios
-                .get("http://localhost:3001/api/negocio/getnegocio", {
+                .get("https://backstyleshop.herokuapp.com/api/negocio/getnegocio", {
                     headers: {
                         'Authorization': `Bearer ${Token}`
                     }

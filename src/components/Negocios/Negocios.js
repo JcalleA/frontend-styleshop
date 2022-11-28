@@ -8,7 +8,7 @@ const Negocios = () => {
     useEffect(() => {
             
             axios
-                .get("http://localhost:3001/api/negocio/getnegocios")
+                .get("https://backstyleshop.herokuapp.com/api/negocio/getnegocios")
                 .then((res) => {
                     const { data } = res;
                     setNegocios(data)

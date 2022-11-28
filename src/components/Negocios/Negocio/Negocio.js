@@ -13,7 +13,7 @@ const Negocio = (props) => {
         console.log(form);
         e.preventDefault();
         await axios
-            .delete("http://localhost:3001/api/negocio/remove",form)
+            .delete("https://backstyleshop.herokuapp.com/api/negocio/remove",form)
             .then((res) => {
                 const { data } = res;
                 Swal.fire(data.mensaje)})
