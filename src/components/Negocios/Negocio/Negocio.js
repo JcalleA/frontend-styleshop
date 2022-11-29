@@ -17,7 +17,7 @@ const Negocio = (props) => {
                     <p className="card-text auto pe-2">{props.ciudad}</p>
                     <p className="card-text auto pe-2">{props.telefono}</p>
                     <button type="button" className="btn btn-primary m-2">Reservar</button>
-                    <button type="button" className="btn btn-danger"  onClick={()=>EliminarNegocio(props.correo)}>Eliminar {props.correo}</button>
+                    <button type="button" className="btn btn-danger"  onClick={()=>EliminarNegocio(props.correo)}>Eliminar</button>
                 </div>
             </div>
         </div>
