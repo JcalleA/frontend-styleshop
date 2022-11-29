@@ -4,6 +4,7 @@ import Negocio from './Negocio/Negocio';
 
 const Negocios = () => {
     const [negocios, setNegocios] = useState([])
+    
         
     useEffect(() => {
             
@@ -19,6 +20,7 @@ const Negocios = () => {
                     setNegocios(datos)
                 })
         }, []);
+        
 
     return (
         <div className="row">

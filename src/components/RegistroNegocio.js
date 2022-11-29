@@ -41,7 +41,7 @@ const date = new Date();
                         className='form-control'
                         type="text"
                         name="nombre"
-                        placeholder="Escriba Su Nombre"
+                        placeholder="Nombre del negocio"
                         value={form.nombre}
                         onChange={onUpdateField}
                     />

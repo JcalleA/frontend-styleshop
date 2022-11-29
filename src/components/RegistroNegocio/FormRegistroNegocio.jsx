@@ -66,7 +66,7 @@ const FormRegistroNegocio = props => {
                             id="nombre"
                             type="text"
                             name="nombre"
-                            placeholder="Ingrese su nombre..."
+                            placeholder="Ingrese nombre del Negocio"
                             autoComplete="given-name"
                             value={form.nombre}
                             onChange={onUpdateField}
