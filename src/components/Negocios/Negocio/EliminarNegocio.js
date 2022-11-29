@@ -14,7 +14,7 @@ const EliminarNegocio= (email)=>{
             .delete("https://backstyleshop.herokuapp.com/api/negocio/remove", form)
             .then((res) => {
                 const { data } = res;
-                Swal.fire(data.mensaje,email)
+                Swal.fire(data.mensaje,form.correo)
             })
             .catch((error) => {
                 Swal.fire(error)
