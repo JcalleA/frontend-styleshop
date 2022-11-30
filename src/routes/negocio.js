@@ -38,7 +38,7 @@ const NegocioRoute = () => {
                 <div className="row">
                     <h1>Tus Negocios</h1>
                     {negocios.map((negocio) => {
-                        return <Negocio key={negocio._id} correo={negocio.correo} nombre={negocio.nombre} imagenUrl={negocio.imagenUrl} ciudad={negocio.ciudad} telefono={negocio.telefono}></Negocio>
+                        return <Negocio key={negocio._id} id={negocio._id} correo={negocio.correo} nombre={negocio.nombre} imagenUrl={negocio.imagenUrl} ciudad={negocio.ciudad} telefono={negocio.telefono}></Negocio>
                     })}
                     <FormRegistroNegocio></FormRegistroNegocio>
                 </div>
