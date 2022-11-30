@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState, useContext } from "react";
+import Negocio from "../components/Negocios/Negocio/Negocio";
 import FormRegistroNegocio from "../components/RegistroNegocio/FormRegistroNegocio";
 import AuthContext from "../contexts/AuthContext";
 
@@ -12,7 +13,7 @@ const NegocioRoute = () => {
     if (auth) {
 
         const Token = auth.usuario.token
-        const [negocio, setNegocio] = useState([])
+        const [negocios, setNegocios] = useState([])
         useEffect(() => {
             axios
                 .get("https://backstyleshop.herokuapp.com/api/negocio/getnegocio", {
@@ -23,9 +24,9 @@ const NegocioRoute = () => {
                 .then((res) => {
                     const { data } = res;
                     if (data.mensaje === "No se encontro Negocio") {
-                        setNegocio(null)
+                        setNegocios(null)
                     } else {
-                        setNegocio(data)
+                        setNegocios(data.negocio)
                     }
 
                 })
@@ -33,21 +34,14 @@ const NegocioRoute = () => {
         }, []);
 
         return (
-            negocio ? (
-
-                <div className=" mt-3 text-center">
-                    <div className="card bg-dark border-white text-white">
-                        <img height="300" width="auto" src={negocio.imagenUrl} className="rounded mx-auto d-block" />
-                        <div className="card-body">
-                            <h5 className="card-title">{negocio.nombre}</h5>
-                            <p className="card-text auto pe-2">{negocio.ciudad}</p>
-                            <p className="card-text auto pe-2">{negocio.telefono}</p>
-                        </div>
-                    </div>
-                    <h1>Registra Negocio</h1>
+            negocios ? (
+                <div className="row">
+                    <h1>Tus Negocios</h1>
+                    {negocios.map((negocio) => {
+                        return <Negocio key={negocio._id} correo={negocio.correo} nombre={negocio.nombre} imagenUrl={negocio.imagenUrl} ciudad={negocio.ciudad} telefono={negocio.telefono}></Negocio>
+                    })}
                     <FormRegistroNegocio></FormRegistroNegocio>
                 </div>
-
             ) : (
                 <div >
                     <h1>No tienes negocio Registra Uno</h1>
@@ -55,7 +49,6 @@ const NegocioRoute = () => {
                 </div>
             )
         )
-
     }
 };
 
