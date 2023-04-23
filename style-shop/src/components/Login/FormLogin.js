@@ -47,7 +47,7 @@ const FormLogin = props => {
                     setTimeout(() => {
                         localStorage.setItem("user",JSON.stringify(datos));
                         setMensaje("");
-                        navigate('/');
+                        navigate('/frontend-styleshop/');
                     }, 1500);
                 }
             })
