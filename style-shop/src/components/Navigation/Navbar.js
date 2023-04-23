@@ -60,7 +60,7 @@ const Barranav = () => {
                         {auth ?
                             <ul>
                                 <li>
-                                    <Link to="/frontend-styleshop">Home</Link>
+                                    <Link to="/">Home</Link>
                                 </li>
                                 <li>
                                     <Link to="/servicios">Servicios</Link>
