@@ -60,7 +60,7 @@ const Barranav = () => {
                         {auth ?
                             <ul>
                                 <li>
-                                    <Link to="/">Home</Link>
+                                    <Link to="/frontend-styleshop/">Home</Link>
                                 </li>
                                 <li>
                                     <Link to="/servicios">Servicios</Link>
@@ -81,7 +81,7 @@ const Barranav = () => {
                             :
                             <ul>
                                 <li>
-                                    <Link to="/">Home</Link>
+                                    <Link to="/frontend-styleshop/">Home</Link>
                                 </li>
                                 <Link to="/registro">
                                     <button className="btn">Registro</button>
