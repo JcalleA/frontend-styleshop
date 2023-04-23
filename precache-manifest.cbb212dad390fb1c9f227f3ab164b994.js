@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/frontend-styleshop/static/js/0.dc6d9654.chunk.js"
   },
   {
-    "revision": "13664b2c184227e02d9b",
+    "revision": "842085dde4088b5483e4",
     "url": "/frontend-styleshop/static/css/main.b01c1f03.chunk.css"
   },
   {
-    "revision": "13664b2c184227e02d9b",
-    "url": "/frontend-styleshop/static/js/main.e4b842d5.chunk.js"
+    "revision": "842085dde4088b5483e4",
+    "url": "/frontend-styleshop/static/js/main.3c85d609.chunk.js"
   },
   {
     "revision": "b5ff2ab18844b5e76c9d",
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/frontend-styleshop/static/js/6.bbaf5825.chunk.js"
   },
   {
-    "revision": "c0e17b92dda8245a93b30a95fbec4c50",
+    "revision": "3651213673ec283d39c1ca9bcf9f133d",
     "url": "/frontend-styleshop/index.html"
   }
 ];
