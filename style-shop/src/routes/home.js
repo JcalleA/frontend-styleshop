@@ -7,6 +7,7 @@ import AuthContext from "../contexts/AuthContext";
 const Home = () => {
 
     const { auth, handleLogout } = useContext(AuthContext);
+    console.log(auth)
     return (
         auth ? (
             <div>
