@@ -26,7 +26,7 @@ const date = new Date();
     const onSubmitForm = async (e) => {
         e.preventDefault();
         await axios
-            .post("https://backstyleshop.herokuapp.com/api/users/registrarnegocio", form)
+            .post("https://back-api-nfs4.onrender.com/api/users/registrarnegocio", form)
             .then(({ data }) => console.log(data));
 
     };

@@ -41,7 +41,7 @@ const FormRegistroNegocio = props => {
     const onSubmitForm = async (e) => {
         e.preventDefault();
         await axios
-            .post("https://backstyleshop.herokuapp.com/api/negocio/registrar", form)
+            .post("https://bback-api-nfs4.onrender.com/api/negocio/registrar", form)
             .then((res) => {
                 const { data } = res;
                 setMensaje(data)

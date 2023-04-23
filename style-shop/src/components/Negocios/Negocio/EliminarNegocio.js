@@ -7,7 +7,7 @@ const EliminarNegocio= (email)=>{
     
         
         axios
-            .delete("https://backstyleshop.herokuapp.com/api/negocio/remove/"+email)
+            .delete("https://back-api-nfs4.onrender.com/api/negocio/remove/"+email)
             .then((res) => {
                 const { data } = res;
                 Swal.fire(data.mensaje+email)

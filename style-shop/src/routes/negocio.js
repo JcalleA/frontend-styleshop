@@ -15,7 +15,7 @@ const NegocioRoute = () => {
         const [negocio, setNegocio] = useState([])
         useEffect(() => {
             axios
-                .get("https://backstyleshop.herokuapp.com/api/negocio/getnegocio", {
+                .get("https://back-api-nfs4.onrender.com/api/negocio/getnegocio", {
                     headers: {
                         'Authorization': `Bearer ${Token}`
                     }
