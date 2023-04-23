@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import './App.css';
-import { Route, Routes, Outlet } from "react-router-dom";
+import { Route, Routes, Outlet, Switch } from "react-router-dom";
 import Barranav from './components/Navigation/Navbar';
 import Home from './routes/home';
 import 'bootstrap/dist/css/bootstrap.min.css';
